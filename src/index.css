@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #35251f; background: #fffaf5; font-synthesis: none; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #ebdccc; -webkit-font-smoothing: antialiased; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+.font-display { font-family: 'Space Grotesk', 'Poppins', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+.field, .select { border: 1px solid rgba(232, 93, 32, 0.3); border-radius: 0px; background: transparent; color: #35251f; padding: 11px 13px; outline: none; transition: border-color .2s; width: 100%; font-family: 'JetBrains Mono', monospace; font-size: 14px; }
+.field:focus, .select:focus { border-color: #e85d20; }
+.field::placeholder { color: #a69a92; }
+.label { color: #e85d20; font-size: 12px; font-weight: 700; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; }
+.panel { border: 1px solid rgba(232, 93, 32, 0.3); border-radius: 0px; background: #fffaf5; padding: 24px; box-shadow: none; }
+.panel span { display: block; color: #8d7c72; font-size: 12px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; }
+.panel strong { display: block; margin-top: 8px; color: #e85d20; font-size: 28px; font-family: 'Space Grotesk', sans-serif; }
+.panel small { color: #a69a92; font-family: 'JetBrains Mono', monospace; }
+.section-title { font-family: 'Space Grotesk', sans-serif; color: #35251f; font-size: 25px; font-weight: 700; text-transform: uppercase; }
+.leaflet-container { z-index: 0; font-family: 'JetBrains Mono', monospace; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
